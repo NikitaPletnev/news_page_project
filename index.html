@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Новостное агенство</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="date.js"></script>
+  <script src='jquery-3.3.1.min.js'></script>
+  <script src='script.js'></script>
+</head>
+<body>
+	<header id="black-bar">
+     	<nav class="fixed-contaner">
+     		Самые <a href="#">свежие новости</a> в реальном времени 
+        <div id = "valute">Курсы валют:&nbsp;
+          <div id = "eur"><img src="img/eur.png"></div>
+          <div id = "usd"><img src="img/usd.png"></div>
+        </div>
+     		<div id="datetime"></div>
+     	</nav>
+    </header>
+    <header id="header">
+    	<nav class="fixed-contaner">
+    		<img id="logo" src="img/Logo.png" alt="Картинка не найдена">
+    
+        <div id="selection">
+            <select id="option">
+                <option>Москва</option>
+            </select>
+        </div>
+        <div id="weather">
+            <img src="img/icon-weather.png" alt="Картинка не найдена">
+        </div>    
+            <div id="weather-degrids">+22°С</div>
+        <form id="search-form">    
+           <input type="search" name="search" id="search-area"  value="Поиск по сайту" size="30" >
+           <input type="submit" id="search-buttom" value=" " >
+        </form>
+        </nav>         
+    </header>
+    <nav id="menu-container">
+        <div class="fixed-contaner">
+            <aside class="menu"><a href ="#">Главная</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Политика</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Общество</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Экономика</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">В мире</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Проишествия</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Спорт</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Наука</a><img src="img/slash.png" alt="Картинка не найдена"></aside>
+            <aside class="menu"><a href ="#">Туризм</a></aside>
+        </div> 
+    </nav>
+    <main id="central-container">
+    <nav class="fixed-contaner">
+         <nav id="column-left">
+            <h2>Новости дня</h2>
+            <aside class="news-item">
+                <nav class="news-item-text">Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018</nav>
+                <nav class="news-item-props">
+                    <a href="#">/ЧМ по футболу</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">17</div>
+                </nav>
+            </aside>
+            <aside class="news-item">
+                <nav class="news-item-text">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в Великобритании</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Политика</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">15</div>
+                </nav>
+            </aside>
+            <aside class="news-item">
+                <nav class="news-item-text">Минтранс предписал оборудовать общественный транспорт кондиционерами</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Транспорт</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">17</div>
+                </nav>
+            </aside>
+            <aside class="news-item">
+                <nav class="news-item-text">Летние кафе Москвы временно закроются из-за непогоды</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Погода</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">17</div>
+                </nav>
+            </aside>
+            <aside class="news-item">
+                <nav class="news-item-text">Комплексное благоустройство Щелковского шоссе завершится в июне</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Транспорт</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">17</div>
+                </nav>
+            </aside>
+            <aside class="news-item">
+                <nav class="news-item-text">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</nav>
+                <nav class="news-item-props">
+                    <a href="#">/ЧМ по футболу</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">17</div>
+                </nav>
+            </aside>
+                <div id="all-news-buttom"><a href="#">Все новости</a></div>
+         </nav>
+        <nav id="column-center"> 
+              <aside class="big-news">
+                  <nav class="big-news-item-props">
+                      <a href="#">/Политика</a>
+                  </nav>
+                  <div id="big-news-article"><a href="#">В Крыму отреагировали на слова Кравчука о возврате полуострова</a></div>
+                  <div id="big-news-data">19 Июня 2018</div>
+                  <div id="big-news-clock">10:48</div>
+              </aside>
+              <aside class="small-news">
+                  <img src="img/news-navalniy.png" alt="Картинка не найдена">
+                  <div class="small-news-text"><a href="#">Алексей Навальный обьявил акцию против пенсионной реформы 1 июля</a></div>
+                 <nav class="news-item-props">
+                    <a href="#">/Политика</a>
+                    <div class="news-time">10:48</div>
+                    <div class="news-comments-count">15</div>
+                </nav>
+              </aside>
+               <aside class="small-news-2">
+                  <img src="img/news-pasport.png" alt="Картинка не найдена">
+                  <div class="small-news-text"><a href="#">Дума увеличила пошлины на выдачу загранпаспортов и водительских прав</a></div>
+                 <nav class="news-item-props">
+                    <a href="#">/Общество</a>
+                    <div class="news-time">12:33</div>
+                    <div class="news-comments-count">36</div>
+                </nav>
+              </aside>
+               <aside class="small-news">
+                  <img src="img/news-ytube.png" alt="Картинка не найдена">
+                  <div class="small-news-text"><a href="#">В России заработал стриминговый сервис YouTube</a></div>
+                 <nav class="news-item-props">
+                    <a href="#">/Интернет</a>
+                    <div class="news-time">11:17</div>
+                    <div class="news-comments-count">10</div>
+                </nav>
+              </aside>
+               <aside class="small-news-2">
+                  <img src="img/news-kain.png" alt="Картинка не найдена">
+                  <div class="small-news-text"><a href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис - Англия</a></div>
+                 <nav class="news-item-props">
+                    <a href="#">/ЧМ-2018</a>
+                    <div class="news-time">11:39</div>
+                    <div class="news-comments-count">25</div>
+                </nav>
+              </aside>
+         </nav>
+        <nav id="column-right">
+            <img src="img/Banner1.png" alt="Картинка не найдена">
+            <img src="img/Banner2.png" alt="Картинка не найдена">
+        </nav>
+    </nav>
+      <nav class="fixed-contaner">
+          <aside id="special-news">
+                 <nav class="big-news-item-props">
+                      <a href="#">/Политика</a>
+                 </nav>
+                   <aside class="special-news-article"><a href="#">Пекин обвинил Вашингтон в развязывании торговой войны</a></aside>
+                  <div id="special-news-data">19 Июня 2018</div>
+                  <div id="special-news-clock">10:48</div>
+                  <aside id="special-news-annotation">Министерство коммерции Китая заявило , что Пекин примет «качественные» и «количественные» меры, если президент США Дональд Трамп введет дополнительные пошлины на китайские товары </aside>   
+          </aside>
+          <nav id="most-read-news">
+         <h2>Cамые читаемые новости</h2>
+                 <aside class="news-item">
+                <nav class="news-item-text-2">В Турции пообещали найти альтернативу из-за отказа США поставить F-35</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Политика</a>
+                    <div class="news-time">11:39</div>
+                    <div class="news-comments-count">25</div>
+                </nav>
+                </aside>
+                 <aside class="news-item">
+                <nav class="news-item-text-2">Назван минимальный доход для причисления к среднему классу</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Политика</a>
+                    <div class="news-time">11:39</div>
+                    <div class="news-comments-count">25</div>
+                </nav>
+                </aside>
+                 <aside class="news-item">
+                <nav class="news-item-text-2">Назван минимальный доход для причисления к среднему классу</nav>
+                <nav class="news-item-props">
+                    <a href="#">/Политика</a>
+                    <div class="news-time">11:39</div>
+                    <div class="news-comments-count">25</div>
+                </nav>
+            </aside>     
+           </nav>
+      </nav>
+    </main>
+  <footer id="footer">
+    <nav id="footer-content">
+      <nav id="footer-left-select">
+           <aside class="footer-text"><a href="#">Главная</a></aside>
+           <aside class="footer-text"><a href="#">Политика</a></aside>
+           <aside class="footer-text"><a href="#">Общество</a></aside>
+           <aside class="footer-text"><a href="#">Экономика</a></aside>
+           <aside class="footer-text"><a href="#">В мире</a></aside>
+         </nav>  
+       <nav id="footer-left-select-2">    
+           <aside class="footer-text"><a href="#">Путешествия</a></aside>
+           <aside class="footer-text"><a href="#">Спорт</a></aside>
+           <aside class="footer-text"><a href="#">Наука</a></aside>
+           <aside class="footer-text"><a href="#">Туризм</a></aside>
+      </nav>
+      <nav id="footer-center-select">
+          <img src="img/logo-footer.png" alt="Картинка не найдена">
+          <aside class="footer-text"><a href="#">Об агенстве</a></aside>
+          <aside class="footer-text"><a href="#">Контакты</a></aside>
+          <aside class="footer-text"><a href="#">Опубликовать новость</a></aside>
+      </nav>
+      <nav id="footer-right-select">
+          <a href="#"><img src="img/vk-logo.png" alt="Картинка не найдена"></a>
+          <a href="#"><img src="img/facebook-logo.png" alt="Картинка не найдена"></a>
+          <a href="#"><img src="img/twitter-logo.png" alt="Картинка не найдена"></a>
+          <a href="#"><img src="img/instagram-logo.png" alt="Картинка не найдена"></a>
+      </nav>
+      <nav id="footer-right-select-2">
+          <aside class="footer-text"><img src="img/phone-logo.png" alt="Картинка не найдена">+7(499)995-55-55</aside>
+           <aside class="footer-text"><img src="img/mail-logo.png" alt="Картинка не найдена">info@agency.ru</aside>
+      </nav> 
+    </nav>    
+  </footer>
+  <footer id="underfooter" class="fixed-contaner">
+      <aside id="underfooter-text">© Новостное агенство, 2017-2018 все права защищены</aside>
+  </footer>
+
+</body>
+</html>
